@@ -25,11 +25,15 @@ Para default: 1.6
 
 - Primary: #e67e22
 - Tins: 
-
 #fdf2e9  
 
 #fae5d3
-- Shades: #cf711f
+
+- Shades: 
+#cf711f
+
+#45260a
+
 - Accents:
 - Greys: 
 
@@ -87,7 +91,7 @@ a {
 /* GENERAL REUSABLE COMPONENTS */
 /******************************/
 
-.centering-container {
+.centered-container {
   max-width: 120rem;
   margin: 0 auto;
   padding: 0 3.2rem;
@@ -97,7 +101,10 @@ a {
   display: grid;
   row-gap: 9.6rem;
   column-gap: 6.4rem;
-  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
 }
 
 .grid--2-cols {
@@ -110,6 +117,10 @@ a {
 
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .grid--center-v {
@@ -152,6 +163,7 @@ a {
   margin-bottom: 3.2rem;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -164,6 +176,11 @@ a {
   border-radius: 9px;
 
   transition: ease all 0.3s;
+
+  /* only fot .btn */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 .btn--full:link,
@@ -191,6 +208,26 @@ a {
   box-shadow: inset 0 0 0 3px rgb(255, 255, 255);
 }
 
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
+}
+
+*:focus {
+  outline: none;
+  /* outline: 4px dotted #e67e22; */
+  /* outline-offset: 8px; */
+  box-shadow: 0 0 0 8px rgba(230, 125, 34, 50%);
+  transition: all 0.3s;
+}
+
 /* HELPER/SETTINGS CLASSES */
 
 .margin-right-sm {
@@ -205,6 +242,8 @@ a {
   text-align: center;
 }
 
+/* ******************************** */
+
 strong {
   font-weight: 500;
 }
@@ -214,6 +253,26 @@ strong {
 
   display: flex;
   gap: 0.4rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+
+  font-size: 1.8rem;
+}
+
+.list-icon {
+  height: 3rem;
+  width: 3rem;
+  color: #e67e22;
 }
 
 .tag {
