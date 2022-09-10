@@ -16,6 +16,8 @@
 
     <link rel="stylesheet" href="css/general.css" />
 
+    <link rel="stylesheet" href="css/queries.css" />
+
     <title>Omnifood</title>
 
     <script
@@ -29,7 +31,7 @@
   </head>
   <body>
     <!-- HEADER SECTION -->
-
+    <!-- nav-open -->
     <header class="header">
       <a href="@">
         <img class="logo" src="img/omnifood-logo.png" alt="Omnifood Logo" />
@@ -43,6 +45,11 @@
           <li><a class="main-nav-link nav-cta" href="#">Try for free</a></li>
         </ul>
       </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
 
     <main>
@@ -281,7 +288,7 @@
               </ul>
             </div>
           </div>
-          <div class="list">
+          <div class="diets">
             <h3 class="heading-tertiary">Works with any diet:</h3>
 
             <ul class="list">
@@ -632,6 +639,7 @@
             Copyright &copy; 2027 by Omnifood, Inc. All rights reserved.
           </p>
         </div>
+
         <div class="address-col">
           <p class="footer-heading">Contact us</p>
           <address class="footer-contacts">
@@ -645,6 +653,7 @@
             </p>
           </address>
         </div>
+
         <nav class="footer-nav-col">
           <p class="footer-heading">Account</p>
           <ul class="footer-nav">
@@ -654,7 +663,7 @@
             <li><a class="footer-link" href="#">Android app</a></li>
           </ul>
         </nav>
-        <nav class="nav-col">
+        <nav class="footer-nav-col">
           <p class="footer-heading">Company</p>
           <ul class="footer-nav">
             <li><a class="footer-link" href="#">About Omnifood</a></li>
@@ -663,7 +672,7 @@
             <li><a class="footer-link" href="#">Careers</a></li>
           </ul>
         </nav>
-        <nav class="nav-col">
+        <nav class="footer-nav-col">
           <p class="footer-heading">Resources</p>
           <ul class="footer-nav">
             <li><a class="footer-link" href="#">Recipe directory</a></li>
