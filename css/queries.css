@@ -123,10 +123,11 @@
 
   .btn-mobile-nav {
     display: block;
+    z-index: 9999;
   }
 
   .main-nav {
-    background-color: rgba(225, 225, 225, 0.9);
+    background-color: rgba(225, 225, 225, 0.99);
     position: absolute;
     top: 0;
     left: 0;
